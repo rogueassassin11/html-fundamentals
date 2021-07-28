@@ -17,6 +17,8 @@ POSITIONING
   -> Normal flow: default positioning / 'relative' 
   -> Absolute: element is removed from the normal flow, no impact on surrounding elements, positioned relative to the viewport or some other parent element
 
+  PSEUDO-ELEMENTS -> don't exist in HTML but can be selected in CSS
+  ADJACENT ELEMENT -> sibling element that is right after
 */
 
 * {
@@ -46,6 +48,7 @@ body {
 
 nav {
   font-size: 18px;
+  text-align: center;
 }
 
 article {
@@ -71,6 +74,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -189,4 +193,26 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  color: #444;
 }
