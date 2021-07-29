@@ -14,6 +14,7 @@ article {
   width: 825px;
   margin: 25px auto;
   border: 5px solid black;
+  position: relative;
 }
 
 h2 {
@@ -82,4 +83,54 @@ button {
 button:hover {
   background-color: #fff;
   color: black;
+}
+
+.sale {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  letter-spacing: 2px;
+}
+
+.color-container {
+  display: block;
+  margin-top: 15px;
+}
+
+.common-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.black-container {
+  background-color: black;
+}
+
+.blue-container {
+  background-color: blue;
+}
+
+.red-container {
+  background-color: red;
+}
+
+.yellow-container {
+  background-color: yellow;
+}
+
+.green-container {
+  background-color: green;
+}
+
+.brown-container {
+  background-color: brown;
 }
