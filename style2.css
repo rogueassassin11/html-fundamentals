@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -33,11 +34,25 @@ h3 {
 img {
   width: 250px;
   margin-bottom: 20px;
+  float: left;
+}
+
+.shopping-details {
+  float: left;
+  width: 250px;
+  padding-left: 30px;
+}
+
+.product-details {
+  float: right;
+  width: 250px;
+  margin-right: 20px;
 }
 
 .price {
   font-size: 25px;
   margin-bottom: 10px;
+  float: left;
 }
 
 .ship {
@@ -45,7 +60,19 @@ img {
   color: #777;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 20px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.price-ship {
+  margin-top: 15px;
 }
 
 p {
