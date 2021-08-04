@@ -27,32 +27,46 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  margin-top: 20px;
   margin-bottom: 15px;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 img {
-  width: 250px;
-  margin-bottom: 20px;
-  float: left;
+  flex: 1 1 0px;
+  width: 0;
 }
 
 .shopping-details {
-  float: left;
-  width: 250px;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-self: flex-start;
+  margin-top: 15px;
+  flex: 1 1 0px;
+  width: 0;
 }
 
 .product-details {
-  float: right;
-  width: 250px;
-  margin-right: 20px;
+  margin-top: 15px;
+  flex: 1 1 0px;
+  width: 0;
+  align-self: flex-start;
+}
+
+.price-ship {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .price {
   font-size: 25px;
-  margin-bottom: 10px;
-  float: left;
 }
 
 .ship {
@@ -61,19 +75,13 @@ img {
   font-size: 14px;
   font-weight: bold;
   padding-top: 5px;
-  margin-bottom: 30px;
-  float: right;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   clear: both;
   content: "";
   display: block;
-}
-
-.price-ship {
-  margin-top: 15px;
-}
+} */
 
 p {
   margin-bottom: 15px;
@@ -127,7 +135,7 @@ button:hover {
 }
 
 .color-container {
-  display: block;
+  display: flex;
   margin-top: 15px;
 }
 
